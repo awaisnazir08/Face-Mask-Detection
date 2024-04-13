@@ -72,12 +72,12 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 	return (locs, preds)
 
 # load our serialized face detector model from disk
-prototxtPath = r"D:\VS Code Folders\Mask Detection\Face-Mask-Detection\face_detector\deploy.prototxt"
-weightsPath = r"D:\VS Code Folders\Mask Detection\Face-Mask-Detection\face_detector\res10_300x300_ssd_iter_140000.caffemodel"
+prototxtPath = r"D:\VS Code Folders\Face-Mask-Detection\face_detector\deploy.prototxt"
+weightsPath = r"D:\VS Code Folders\Face-Mask-Detection\face_detector\res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 # load the face mask detector model from disk
-maskNet = load_model("D:\VS Code Folders\Mask Detection\mask_detector.h5")
+maskNet = load_model("D:\VS Code Folders\Face-Mask-Detection\mask_detector.h5")
 
 # initialize the video stream
 print("[INFO] starting video stream...")
