@@ -32,10 +32,19 @@ Clone the repository:
    ```bash
    cd face-mask-detector
    ```
+## Demo
+
+### Masked Face Detection
+
+![Snap of Masked Face Detection](mask.png)
+
+### No Face Mask Detection
+
+![Without Mask Detection](no_mask.png)
 
    ## Project Structure
 
-- **mask_detector.py**: Main script for real-time face mask detection.
+- **train_mask_detector_colab.ipynb**: Main script for real-time face mask detection.
 - **model**: Directory containing the pre-trained MobileNet model.
 - **utils**: Directory containing utility functions for image preprocessing and bounding box drawing.
 - **assets**: Directory for storing sample images or videos (if applicable).
