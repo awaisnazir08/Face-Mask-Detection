@@ -45,10 +45,10 @@ Clone the repository:
    ## Project Structure
 
 - **train_mask_detector_colab.ipynb**: Main script for real-time face mask detection.
-- **model**: Directory containing the pre-trained MobileNet model.
-- **utils**: Directory containing utility functions for image preprocessing and bounding box drawing.
-- **assets**: Directory for storing sample images or videos (if applicable).
+- **mask_detector.h5**: Contains the trained weights after applying transfer learning to the MobileNet.
+- **detect_mask_video**: Code using OpenCV for real-time face mask detections that uses the model that has been trained.
 
+  
 ## Acknowledgments
 
 - This project was completed as part of a Computer Vision internship at The Sparks Foundation.
